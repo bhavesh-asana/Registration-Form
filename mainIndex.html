@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registaration Page</title>
+        <link rel="stylesheet" href="./styles.css">
+        <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+    </head>
+       
+    <body>
+        <h1>Registaration Page</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="Mname">Middle Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="fname" name="middle" placeholder="Enter your middle name">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-10">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+                </div>
+            </div>
+
+            <!-- TODO: Gender -->
+            <div class="row">
+                <div class="col-10">
+                    <label for="gender" required>Gender:</label>
+                </div>
+                <div class="col-90">
+                    <input type="radio" id="male" name="gender" value="male"/>Male
+                    <input type="radio" id="female" name="gender" value="female"/>Female
+                    <input type="radio" id="other" name="other" value="other"/>Other
+                </div>
+            </div>
+
+            <!-- TODO: Email -->
+            <div class="row">
+                <div class="col-10">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-90">
+                    <input type="email" id="email" name="email" placeholder="@gmail.com">
+                </div>
+            </div>
+
+            <!-- TODO: Mobile Number -->
+            <div class="row">
+                <div class="col-10">
+                    <label for="phone">Phone:</label>
+                </div>
+                <div class="col-90">
+                    <input type="text" name="country code"  value="+91" size="3"/>
+                    <input type="tel" id="phone" name="phone" placeholder="10 digits number">
+                </div>
+            </div>
+
+            <!-- TODO: Courses alignment -->
+            <div class="row">
+                <div class="col-10">
+                    <label for="courses" required >Courses:</label>
+                </div>
+                <div class="col-90">
+                    <select name="course" id="course">
+                        <option value=" ">Select Course:</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="M.Tech">M.Tech</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+
+            
+
+            <!-- TODO: Address -->
+            <div class="row">
+                <div class="col-10">
+                    <label for="address">Address:</label>
+                </div>
+                <div class="col-90">
+                    <textarea name="address" id="address" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            
+        
+            <div class="row">
+                <input type="submit" value="Submit" onclick="SaveStudentDetails()">
+            </div>  
+        </div>  
+    </body>
+</html>
